@@ -1,0 +1,2 @@
+"c:\Program Files\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin\STM32_Programmer_CLI.exe" -c port=SWD mode=HOTPLUG shared -u 0x24000000 64000 .\Debug\tracex.bin
+copy .\Debug\tracex.bin .\Debug\tracex.trx
