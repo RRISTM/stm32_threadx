@@ -97,8 +97,8 @@ VOID my_thread_entry (ULONG initial_input)
     while(1){
         HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
         tx_thread_sleep(2);
-        tx_semaphore_ceiling_put(&semaphore_ptr,1);//unconent test semaphore with limit
-        //tx_semaphore_put(&semaphore_ptr,1);//unconent test semaphore without limit
+        //tx_semaphore_ceiling_put(&semaphore_ptr,1);//unconent test semaphore with limit
+        tx_semaphore_put(&semaphore_ptr);//unconent test semaphore without limit
     }
 }
 

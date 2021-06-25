@@ -32,7 +32,7 @@ VOID my_thread_entry (ULONG initial_input)
 	tx_thread_sleep(15);
 	while(1){
 		tx_mutex_get(&mutex_ptr,TX_WAIT_FOREVER);
-		HAL_GPIO_TogglePin(PIOB, GPIO_PIN_0);
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
 		tx_mutex_put(&mutex_ptr);
 		tx_thread_sleep(15);
 	}
@@ -53,7 +53,7 @@ VOID my_thread_entry (ULONG initial_input)
 	tx_thread_sleep(15);
 	while(1){
 		tx_mutex_get(&mutex_ptr,TX_WAIT_FOREVER);
-		HAL_GPIO_TogglePin(PIOB, GPIO_PIN_0);
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
 		tx_mutex_put(&mutex_ptr);
 		tx_thread_sleep(15);
 	}
@@ -132,7 +132,7 @@ VOID my_thread_entry (ULONG initial_input)
 	tx_thread_sleep(15);
 	while(1){
 		tx_mutex_get(&mutex_ptr,TX_WAIT_FOREVER);
-		HAL_GPIO_TogglePin(PIOB, GPIO_PIN_0);
+		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
 		tx_mutex_put(&mutex_ptr);
 		tx_thread_sleep(15);
 	}
