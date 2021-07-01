@@ -61,90 +61,211 @@
       "file": "1_prepare_project.md"
     },
     {
-      "name": "13. HandsOn 1 copy",
+      "name": "HandsOn 1 copy",
       "path": "/workshop",
       "file": "copy_sheet.md"
+    },
+    {
+      "name": "Add threadx",
+      "path": "/examples",
+      "file": "add_threadx_example.md"
+    },
+    {
+      "name": "Adding tracex",
+      "path": "/examples",
+      "file": "adding_tracex_example.md"
+    },
+    {
+      "name": "Dynamic memory allocation",
+      "path": "/examples",
+      "file": "threadx_dynamic_memory_allocation_example.md"
+    },
+    {
+      "name": "Memory block pool",
+      "path": "/examples",
+      "file": "threadx_memory_block_pool_example.md"
+    },
+    {
+      "name": "Memory byte pool",
+      "path": "/examples",
+      "file": "threadx_memory_byte_pool_example.md"
+    },
+    {
+      "name": "Mutex basic",
+      "path": "/examples",
+      "file": "threadx_mutex_basic_example.md"
+    },
+    {
+      "name": "Queue basic",
+      "path": "/examples",
+      "file": "threadx_queue_basic_example.md"
+    },
+    {
+      "name": "Semaphore basic",
+      "path": "/examples",
+      "file": "threadx_semaphore_basic_example.md"
+    },
+    {
+      "name": "Thread create",
+      "path": "/examples",
+      "file": "threadx_thread_create_example.md"
+    },
+    {
+      "name": "Thread preemption treshold",
+      "path": "/examples",
+      "file": "threadx_thread_preemption_treshold_example.md"
+    },
+    {
+      "name": "Timer basic",
+      "path": "/examples",
+      "file": "threadx_timer_basic_example.md"
     }
   ],
 
   "menuStructure": [
     {
-      "type": "File",
-      "name": "1. Add ThreadX",
-      "path": "/theory_utility",
-      "file": "add_threadx.md"
+      "type": "Folder",
+      "name": "Theory",
+      "children":[
+        {
+          "type": "File",
+          "name": "1. Add ThreadX",
+          "file": "add_threadx.md"
+        },
+        {
+          "type": "File",
+          "name": "2. Add TraceX",
+          "file": "adding_tracex.md"
+        },
+        {
+          "type": "File",
+          "name": "3. ThreadX basic",
+          "file": "threadx_basic stucture_flow.md"
+        },
+        {
+          "type": "File",
+          "name": "4. ThreadX memory",
+          "file": "threadx_memory_allocation.md"
+        },
+        {
+          "type": "File",
+          "name": "5. Memory pools",
+          "file": "threadx_memory_pools.md"
+        },
+        {
+          "type": "File",
+          "name": "6. Threads",
+          "file": "thredx_thread.md"
+        },
+        {
+          "type": "File",
+          "name": "7. Semaphore",
+          "file": "thredx_semaphore.md"
+        },
+        {
+          "type": "File",
+          "name": "8. Mutex",
+          "file": "thredx_mutex.md"
+        },
+        {
+          "type": "File",
+          "name": "9. Queue",
+          "file": "thredx_queue.md"
+        },
+        {
+          "type": "File",
+          "name": "10. Event flags",
+          "file": "thredx_events.md"
+        },
+        {
+          "type": "File",
+          "name": "11. Timer",
+          "file": "threadx_timer.md"
+        }
+      ]
     },
     {
-      "type": "File",
-      "name": "2. Add TraceX",
-      "path": "/theory_utility",
-      "file": "adding_tracex.md"
+      "type": "Folder",
+      "name": "Workshop",
+      "children":[
+        {
+          "type": "File",
+          "name": "HandsOn 1 copy",
+          "file": "copy_sheet.md"
+        }
+      ]
     },
     {
-      "type": "File",
-      "name": "3. ThreadX basic",
-      "path": "/theory_utility",
-      "file": "threadx_basic stucture_flow.md"
-    },
-    {
-      "type": "File",
-      "name": "4. ThreadX memory",
-      "path": "/theory_utility",
-      "file": "threadx_memory_allocation.md"
-    },
-    {
-      "type": "File",
-      "name": "5. Memory pools",
-      "path": "/theory_utility",
-      "file": "threadx_memory_pools.md"
-    },
-    {
-      "type": "File",
-      "name": "6. Threads",
-      "path": "/theory_utility",
-      "file": "thredx_thread.md"
-    },
-    {
-      "type": "File",
-      "name": "7. Semaphore",
-      "path": "/theory_utility",
-      "file": "thredx_semaphore.md"
-    },
-    {
-      "type": "File",
-      "name": "8. Mutex",
-      "path": "/theory_utility",
-      "file": "thredx_mutex.md"
-    },
-    {
-      "type": "File",
-      "name": "9. Queue",
-      "path": "/theory_utility",
-      "file": "thredx_queue.md"
-    },
-    {
-      "type": "File",
-      "name": "10. Event flags",
-      "path": "/theory_utility",
-      "file": "thredx_events.md"
-    },
-    {
-      "type": "File",
-      "name": "11. Timer",
-      "path": "/theory_utility",
-      "file": "threadx_timer.md"
-    },
-    {
-      "type": "File",
-      "name": "12. prepare project",
-      "path": "/workshop",
-      "file": "1_prepare_project.md"
-    },
-    {
-      "type": "File",
-      "name": "13. HandsOn 1 copy",
-      "path": "/workshop",
-      "file": "copy_sheet.md"
+      "type": "Folder",
+      "name": "Examples",
+      "children":[
+        {
+          "type": "File",
+          "name": "Add threadx",
+          "path": "/examples",
+          "file": "add_threadx_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Adding tracex",
+          "path": "/examples",
+          "file": "adding_tracex_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Dynamic memory allocation",
+          "path": "/examples",
+          "file": "threadx_dynamic_memory_allocation_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Memory block pool",
+          "path": "/examples",
+          "file": "threadx_memory_block_pool_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Memory byte pool",
+          "path": "/examples",
+          "file": "threadx_memory_byte_pool_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Mutex basic",
+          "path": "/examples",
+          "file": "threadx_mutex_basic_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Queue basic",
+          "path": "/examples",
+          "file": "threadx_queue_basic_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Semaphore basic",
+          "path": "/examples",
+          "file": "threadx_semaphore_basic_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Thread create",
+          "path": "/examples",
+          "file": "threadx_thread_create_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Thread preemption treshold",
+          "path": "/examples",
+          "file": "threadx_thread_preemption_treshold_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Timer basic",
+          "path": "/examples",
+          "file": "threadx_timer_basic_example.md"
+        }
+      ]
     }
   ]
 }
