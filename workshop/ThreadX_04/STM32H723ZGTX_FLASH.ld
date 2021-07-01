@@ -117,10 +117,10 @@ SECTIONS
     PROVIDE_HIDDEN (__fini_array_end = .);
   } >FLASH
 
- .trace :
+ .trace (NOLOAD):
  {
   . = ALIGN(4);
-     *(.trace)
+     *(.bss.tracex_buffer)
  } > RAM_D1
 
   /* used by the startup to initialize data */

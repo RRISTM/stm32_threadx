@@ -80,7 +80,7 @@ tx_trace_enable(&tracex_buffer,TRACEX_BUFFER_SIZE,30);
 1. Add this to STM32H723ZGTX_FLASH.ld file
 
 ```c
- .trace :
+ .trace (NOLOAD):
  {
   . = ALIGN(4);
      *(.trace)

@@ -117,7 +117,7 @@ SECTIONS
     PROVIDE_HIDDEN (__fini_array_end = .);
   } >FLASH
 
- .trace :
+ .trace (NOLOAD):
  {
   . = ALIGN(4);
      *(.trace)

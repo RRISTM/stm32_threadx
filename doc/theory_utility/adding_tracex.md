@@ -58,7 +58,7 @@ Now we need to place trace buffer on fix location that it will be easy to find i
 For this we must add to linker file `STM32H723ZGTX_FLASH.ld` this lines:
 
 ```c
- .trace :
+ .trace (NOLOAD):
  {
   . = ALIGN(4);
  	*(.trace)
