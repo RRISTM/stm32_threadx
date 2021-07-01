@@ -61,9 +61,64 @@
       "file": "1_prepare_project.md"
     },
     {
-      "name": "13. HandsOn 1 copy",
+      "name": "HandsOn 1 copy",
       "path": "/workshop",
       "file": "copy_sheet.md"
+    },
+    {
+      "name": "Add threadx",
+      "path": "/examples",
+      "file": "add_threadx_example.md"
+    },
+    {
+      "name": "Adding tracex",
+      "path": "/examples",
+      "file": "adding_tracex_example.md"
+    },
+    {
+      "name": "Dynamic memory allocation",
+      "path": "/examples",
+      "file": "threadx_dynamic_memory_allocation_example.md"
+    },
+    {
+      "name": "Memory block pool",
+      "path": "/examples",
+      "file": "threadx_memory_block_pool_example.md"
+    },
+    {
+      "name": "Memory byte pool",
+      "path": "/examples",
+      "file": "threadx_memory_byte_pool_example.md"
+    },
+    {
+      "name": "Mutex basic",
+      "path": "/examples",
+      "file": "threadx_mutex_basic_example.md"
+    },
+    {
+      "name": "Queue basic",
+      "path": "/examples",
+      "file": "threadx_queue_basic_example.md"
+    },
+    {
+      "name": "Semaphore basic",
+      "path": "/examples",
+      "file": "threadx_semaphore_basic_example.md"
+    },
+    {
+      "name": "Thread create",
+      "path": "/examples",
+      "file": "threadx_thread_create_example.md"
+    },
+    {
+      "name": "Thread preemption treshold",
+      "path": "/examples",
+      "file": "threadx_thread_preemption_treshold_example.md"
+    },
+    {
+      "name": "Timer basic",
+      "path": "/examples",
+      "file": "threadx_timer_basic_example.md"
     }
   ],
 
@@ -133,24 +188,83 @@
       "type": "Folder",
       "name": "Workshop",
       "children":[
-
-    {
-      "type": "File",
-      "name": "12. prepare project",
-      "file": "1_prepare_project.md"
-    },
-    {
-      "type": "File",
-      "name": "13. HandsOn 1 copy",
-      "file": "copy_sheet.md"
-    }
+        {
+          "type": "File",
+          "name": "HandsOn 1 copy",
+          "file": "copy_sheet.md"
+        }
       ]
     },
     {
       "type": "Folder",
       "name": "Examples",
       "children":[
-        
+        {
+          "type": "File",
+          "name": "Add threadx",
+          "path": "/examples",
+          "file": "add_threadx_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Adding tracex",
+          "path": "/examples",
+          "file": "adding_tracex_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Dynamic memory allocation",
+          "path": "/examples",
+          "file": "threadx_dynamic_memory_allocation_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Memory block pool",
+          "path": "/examples",
+          "file": "threadx_memory_block_pool_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Memory byte pool",
+          "path": "/examples",
+          "file": "threadx_memory_byte_pool_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Mutex basic",
+          "path": "/examples",
+          "file": "threadx_mutex_basic_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Queue basic",
+          "path": "/examples",
+          "file": "threadx_queue_basic_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Semaphore basic",
+          "path": "/examples",
+          "file": "threadx_semaphore_basic_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Thread create",
+          "path": "/examples",
+          "file": "threadx_thread_create_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Thread preemption treshold",
+          "path": "/examples",
+          "file": "threadx_thread_preemption_treshold_example.md"
+        },
+        {
+          "type": "File",
+          "name": "Timer basic",
+          "path": "/examples",
+          "file": "threadx_timer_basic_example.md"
+        }
       ]
     }
   ]
