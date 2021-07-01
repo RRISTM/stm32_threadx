@@ -14,7 +14,7 @@ UINT App_ThreadX_Init(VOID *memory_ptr)
   /* USER CODE BEGIN App_ThreadX_Init */
   ret_val = tx_thread_create(&thread_ptr, "my_thread",
       my_thread_entry, 0x1234,
-	  thread_stack, THRAD_STACK_SIZE,
+	  thread_stack, THREAD_STACK_SIZE,
       15, 15, 1,
       TX_AUTO_START);
   /* USER CODE END App_ThreadX_Init */
@@ -53,13 +53,13 @@ Fifth and eight argument is stack array and size of this array.
 Or stack is defined as
 
 ```c
-uint8_t thread_stack[THRAD_STACK_SIZE];
+uint8_t thread_stack[THREAD_STACK_SIZE];
 ```
 
 and its size is
 
 ```c
-#define THRAD_STACK_SIZE 1024
+#define THREAD_STACK_SIZE 1024
 ```
 
 Seventh argument is thread priority. In our case 15.
@@ -136,9 +136,9 @@ In this case T1(my_thread) is sleeping for 3 systicks interrupts. During this ri
 ![thread priority](./img/17.svg)
 
 ```c
-#define THRAD_STACK_SIZE 1024
-uint8_t thread_stack[THRAD_STACK_SIZE];
-uint8_t thread_stack2[THRAD_STACK_SIZE];
+#define THREAD_STACK_SIZE 1024
+uint8_t thread_stack[THREAD_STACK_SIZE];
+uint8_t thread_stack2[THREAD_STACK_SIZE];
 TX_THREAD thread_ptr;
 TX_THREAD thread_ptr2;
 uint32_t ret_val;
@@ -163,12 +163,12 @@ UINT App_ThreadX_Init(VOID *memory_ptr)
   /* USER CODE BEGIN App_ThreadX_Init */
   ret_val = tx_thread_create(&thread_ptr, "my_thread",
       my_thread_entry, 0x1234,
-	  thread_stack, THRAD_STACK_SIZE,
+	  thread_stack, THREAD_STACK_SIZE,
       14, 14, 1,
       TX_AUTO_START);
   ret_val = tx_thread_create(&thread_ptr2, "my_thread2",
       my_thread_entry2, 0x1234,
-	  thread_stack2, THRAD_STACK_SIZE,
+	  thread_stack2, THREAD_STACK_SIZE,
       15, 15, 1,
       TX_AUTO_START);
 
