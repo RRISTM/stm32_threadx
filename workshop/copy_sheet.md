@@ -18,7 +18,7 @@ Or copy here:
 2. To line 36 /* USER CODE BEGIN PD */ add:
 
 ```c
-#define THRAD_STACK_SIZE 1024
+#define THREAD_STACK_SIZE 1024
 ```
 
 3. To line 47 just after /* USER CODE BEGIN PV */ add:
