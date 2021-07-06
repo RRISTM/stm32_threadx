@@ -24,7 +24,7 @@ Or copy here:
 3. To line 47 just after /* USER CODE BEGIN PV */ add:
 
 ```c
-uint8_t thread_stack[THRAD_STACK_SIZE];
+uint8_t thread_stack[THREAD_STACK_SIZE];
 	TX_THREAD thread_ptr;
 ```
 
