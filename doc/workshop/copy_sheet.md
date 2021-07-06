@@ -18,13 +18,13 @@ Or copy here:
 2. To line 36 /* USER CODE BEGIN PD */ add:
 
 ```c
-#define THRAD_STACK_SIZE 1024
+#define THREAD_STACK_SIZE 1024
 ```
 
 3. To line 47 just after /* USER CODE BEGIN PV */ add:
 
 ```c
-uint8_t thread_stack[THRAD_STACK_SIZE];
+uint8_t thread_stack[THREAD_STACK_SIZE];
 	TX_THREAD thread_ptr;
 ```
 
@@ -102,7 +102,7 @@ HAL_Delay(500);
 1. To App_threadx.c add new thread handle and stack
 
 ```c
-uint8_t thread_stack2[THRAD_STACK_SIZE];
+uint8_t thread_stack2[THREAD_STACK_SIZE];
 TX_THREAD thread_ptr2;
 ```
 
@@ -115,7 +115,7 @@ VOID my_thread_entry2(ULONG initial_input);
 3. Create thread priority 14
 
 ```c
- tx_thread_create(&thread_ptr2, "my_thread2", my_thread_entry2, 0x1234, thread_stack2,	THRAD_STACK_SIZE, 14, 14, 1, TX_AUTO_START);
+ tx_thread_create(&thread_ptr2, "my_thread2", my_thread_entry2, 0x1234, thread_stack2,	THREAD_STACK_SIZE, 14, 14, 1, TX_AUTO_START);
 ```
 
 4. Thread function
@@ -136,5 +136,5 @@ VOID my_thread_entry2 (ULONG initial_input)
 1. Change my_thread preemption priority to 13
 
 ```c
-      my_thread_entry, 0x1234, thread_stack, THRAD_STACK_SIZE, 15, 13, 1, TX_AUTO_START);
+      my_thread_entry, 0x1234, thread_stack, THREAD_STACK_SIZE, 15, 13, 1, TX_AUTO_START);
 ```
