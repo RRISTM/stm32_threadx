@@ -36,8 +36,10 @@ VOID my_thread_entry(ULONG initial_input);
 
 # STEP 2: Create the thread
 
+1. Between `/* USER CODE BEGIN App_ThreadX_Init */` and `/* USER CODE END App_ThreadX_Init */`
+
 ```c
-tx_thread_create( &thread_ptr, "my_thread", my_thread_entry, 0x1234, thread_stack, THRAD_STACK_SIZE, 15, 15, 1, TX_AUTO_START);
+tx_thread_create( &thread_ptr, "my_thread", my_thread_entry, 0x1234, thread_stack, THREAD_STACK_SIZE, 15, 15, 1, TX_AUTO_START);
 ```
 
 # STEP 3: Create the thread’s main function
@@ -77,10 +79,10 @@ tx_trace_enable(&tracex_buffer,TRACEX_BUFFER_SIZE,30);
 
 # Put trace buffer to AXI SRAM
 
-1. Add this to STM32H723ZGTX_FLASH.ld file
+1. Add this to STM32H723ZGTX_FLASH.ld file around line 120 
 
 ```c
- .trace :
+ .trace (NOLOAD):
  {
   . = ALIGN(4);
      *(.trace)
