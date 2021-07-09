@@ -17,6 +17,7 @@ Or copy here:
 1. Open Core\Src \app_threadx_rtos.c and add
 2. To line 36 /* USER CODE BEGIN PD */ add:
 
+
 ```c
 #define THREAD_STACK_SIZE 1024
 ```
@@ -25,7 +26,7 @@ Or copy here:
 
 ```c
 uint8_t thread_stack[THREAD_STACK_SIZE];
-	TX_THREAD thread_ptr;
+TX_THREAD thread_ptr;
 ```
 
 4. To line 52 after /* USER CODE BEGIN PFP */ add:
@@ -51,7 +52,7 @@ tx_thread_create( &thread_ptr, "my_thread", my_thread_entry, 0x1234, thread_stac
 ```
 
 2. Then after line 77, /* USER CODE BEGIN 1 */
-   
+
 ```c
 VOID my_thread_entry (ULONG initial_input)
 {
