@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/stm32_threadx/static/css/main.9f588f0a.chunk.css",
-    "main.js": "/stm32_threadx/static/js/main.8ad7d5b6.chunk.js",
-    "main.js.map": "/stm32_threadx/static/js/main.8ad7d5b6.chunk.js.map",
+    "main.js": "/stm32_threadx/static/js/main.c7efdaed.chunk.js",
+    "main.js.map": "/stm32_threadx/static/js/main.c7efdaed.chunk.js.map",
     "runtime-main.js": "/stm32_threadx/static/js/runtime-main.d0ca9f86.js",
     "runtime-main.js.map": "/stm32_threadx/static/js/runtime-main.d0ca9f86.js.map",
     "static/css/2.68bb20d9.chunk.css": "/stm32_threadx/static/css/2.68bb20d9.chunk.css",
-    "static/js/2.78fa3aba.chunk.js": "/stm32_threadx/static/js/2.78fa3aba.chunk.js",
-    "static/js/2.78fa3aba.chunk.js.map": "/stm32_threadx/static/js/2.78fa3aba.chunk.js.map",
+    "static/js/2.6a8acdf5.chunk.js": "/stm32_threadx/static/js/2.6a8acdf5.chunk.js",
+    "static/js/2.6a8acdf5.chunk.js.map": "/stm32_threadx/static/js/2.6a8acdf5.chunk.js.map",
     "index.html": "/stm32_threadx/index.html",
     "static/css/2.68bb20d9.chunk.css.map": "/stm32_threadx/static/css/2.68bb20d9.chunk.css.map",
     "static/css/main.9f588f0a.chunk.css.map": "/stm32_threadx/static/css/main.9f588f0a.chunk.css.map",
-    "static/js/2.78fa3aba.chunk.js.LICENSE.txt": "/stm32_threadx/static/js/2.78fa3aba.chunk.js.LICENSE.txt",
+    "static/js/2.6a8acdf5.chunk.js.LICENSE.txt": "/stm32_threadx/static/js/2.6a8acdf5.chunk.js.LICENSE.txt",
     "static/media/index.css": "/stm32_threadx/static/media/roboto-latin-900italic.cb5ad999.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.d0ca9f86.js",
     "static/css/2.68bb20d9.chunk.css",
-    "static/js/2.78fa3aba.chunk.js",
+    "static/js/2.6a8acdf5.chunk.js",
     "static/css/main.9f588f0a.chunk.css",
-    "static/js/main.8ad7d5b6.chunk.js"
+    "static/js/main.c7efdaed.chunk.js"
   ]
 }

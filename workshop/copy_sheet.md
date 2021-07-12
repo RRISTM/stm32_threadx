@@ -17,7 +17,6 @@ Or copy here:
 1. Open Core\Src \app_threadx_rtos.c and add
 2. To line 36 /* USER CODE BEGIN PD */ add:
 
-
 ```c
 #define THREAD_STACK_SIZE 1024
 ```

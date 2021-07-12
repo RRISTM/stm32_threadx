@@ -1,4 +1,5 @@
 {
+  "githubLoc": "https://github.com/RRISTM/stm32_threadx/tree/master/doc",
   "filesToLoadArr": [
     {
       "name": "1. Add ThreadX",
@@ -126,7 +127,7 @@
     {
       "type": "Folder",
       "name": "Theory",
-      "children":[
+      "children": [
         {
           "type": "File",
           "name": "1. Add ThreadX",
@@ -187,7 +188,7 @@
     {
       "type": "Folder",
       "name": "Workshop",
-      "children":[
+      "children": [
         {
           "type": "File",
           "name": "HandsOn 1 copy",
@@ -198,7 +199,7 @@
     {
       "type": "Folder",
       "name": "Examples",
-      "children":[
+      "children": [
         {
           "type": "File",
           "name": "Add threadx",
