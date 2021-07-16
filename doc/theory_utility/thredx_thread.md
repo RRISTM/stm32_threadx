@@ -3,7 +3,7 @@
 In ThreadX thread is created by `tx_thread_create`:
 
 ```c
-#define THRAD_STACK_SIZE 1024
+#define THREAD_STACK_SIZE 1024
 uint8_t thread_stack[THRAD_STACK_SIZE];
 TX_THREAD thread_ptr;
 UINT App_ThreadX_Init(VOID *memory_ptr)
