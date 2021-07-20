@@ -25,7 +25,7 @@ Or copy here:
 
 ```c
 uint8_t thread_stack[THREAD_STACK_SIZE];
-	TX_THREAD thread_ptr;
+TX_THREAD thread_ptr;
 ```
 
 4. To line 52 after /* USER CODE BEGIN PFP */ add:
