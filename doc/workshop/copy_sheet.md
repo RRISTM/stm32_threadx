@@ -51,7 +51,7 @@ tx_thread_create( &thread_ptr, "my_thread", my_thread_entry, 0x1234, thread_stac
 ```
 
 2. Then after line 77, /* USER CODE BEGIN 1 */
-   
+
 ```c
 VOID my_thread_entry (ULONG initial_input)
 {
