@@ -125,7 +125,7 @@ VOID my_thread_entry2 (ULONG initial_input)
 {
     while(1){
         HAL_GPIO_TogglePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin);
-        HAL_Delay(200);
+        HAL_Delay(500);
         tx_thread_sleep(20);
     }
 }
