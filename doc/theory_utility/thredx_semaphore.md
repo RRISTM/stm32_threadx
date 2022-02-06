@@ -1,7 +1,7 @@
 # Semaphore
 
-The sempahore can be used to control if the thread can continue or not.
-The semaphore have conter which is incremented by `tx_semaphore_put`. And decremented by `tx_semaphore_get`. When no semaphore is available the thread can be suspended until semaphore is available.
+The semaphore can be used to control if the thread can continue or not.
+The semaphore have counter which is incremented by `tx_semaphore_put` and decremented by `tx_semaphore_get`. When no semaphore is available the thread can be suspended until semaphore is available.
 
 ## Semaphore creation
 
@@ -12,8 +12,8 @@ For semaphore we must create a handle `TX_SEMAPHORE`.
 ```
 
 The semaphore is created by `tx_semaphore_create`
-First argument is handle `semaphore_ptr`.
-Second argument is name `my_semaphore`.
+First argument is the handle `semaphore_ptr`.
+Second argument is the name `my_semaphore`.
 Third argument is initialization value for counter `1`.
 
 ```c
@@ -22,7 +22,7 @@ ret_val=tx_semaphore_create(&semaphore_ptr,"my_semaphore",1);
 
 ## Semaphore put
 
-The thread can increase the semaphore conter value by calling `tx_semaphore_put`. It other threads are waiting on semaphore it will mowe them to ready state.
+The thread can increase the semaphore counter value by calling `tx_semaphore_put`. If other threads are waiting for this semaphore this will move them to ready state.
 
 ![semaphore put](./img/20.svg)
 
@@ -40,7 +40,7 @@ VOID my_thread_entry (ULONG initial_input)
 
 ## Semaphore get
 
-If the application want semaphore it must call `tx_semaphore_get`. Second argument is waiting time. From to `TX_NO_WAIT`(0) `TX_WAIT_FOREVER`(0xFFFFFFFF).
+If the application wants semaphore it must call `tx_semaphore_get`. Second argument is waiting time from `TX_NO_WAIT`(0) to `TX_WAIT_FOREVER`(0xFFFFFFFF).
 
 ```c
 VOID my_thread_entry2 (ULONG initial_input)
@@ -55,20 +55,20 @@ VOID my_thread_entry2 (ULONG initial_input)
 
 ![semaphore get](./img/21.svg)
 
-If the semaphore is not available(0) thead is put to suspend state until the semaphore is available or `tx_semaphore_get` reaches its timeout.
+If the semaphore is not available (0) thread is put to suspend state until the semaphore is available or `tx_semaphore_get` reaches its timeout.
 
 ![semaphore get with suspend](./img/22.svg)
 
 ## Binary sempahore
 
-The sempahore can be limited to maximum value inside its counter. For this is possible use `tx_semaphore_ceiling_put` with argument of maximum semaphore value.
-This code will allow to interease semaphore only to value 1.
+The semaphore can be limited to maximum value inside its counter. To define this use `tx_semaphore_ceiling_put` with argument of maximum semaphore value.
+This code will allow to increase semaphore value to 1 only.
 
 ```c
 tx_semaphore_ceiling_put(&semaphore_ptr,1);
 ```
 
-And this code will allow to interease semaphore only to value 2.
+And this code will allow to increase semaphore value to 2 only.
 
 ```c
 tx_semaphore_ceiling_put(&semaphore_ptr,2);
